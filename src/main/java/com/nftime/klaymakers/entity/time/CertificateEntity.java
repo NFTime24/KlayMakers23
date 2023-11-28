@@ -1,10 +1,12 @@
 package com.nftime.klaymakers.entity.time;
 
 import com.querydsl.core.annotations.QueryEntity;
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 
-import java.math.BigDecimal;
 import java.time.Instant;
 
 /**
@@ -37,6 +39,9 @@ public class CertificateEntity {
 
     @Column(name = "certificate_description", nullable = false)
     private String certificateDescription;
+
+    @Column(name = "certificate_website", nullable = false)
+    private String certificateWebsite;
 
     @Column(name = "certificate_start_date", nullable = false)
     private Instant certificateStartDate;

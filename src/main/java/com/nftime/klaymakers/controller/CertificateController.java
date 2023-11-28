@@ -4,7 +4,6 @@ import com.nftime.klaymakers.model.result.ApiResponse;
 import com.nftime.klaymakers.model.result.CertificateModel;
 import com.nftime.klaymakers.service.CertificateFacadeService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -29,9 +28,15 @@ public class CertificateController {
 
     @Operation(summary="인증서 목록", description="인증서 목록 출력")
     @GetMapping(path="/list", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ApiResponse<List<CertificateModel>> getAdminInfo(
-    ) {
+    public ApiResponse<List<CertificateModel>> getCertificateList() {
         List<CertificateModel> result = certificateFacadeService.getCertificateList();
+        return new ApiResponse<>(result);
+    }
+
+    @Operation(summary="인증서 단건", description="인증서 단건 출력")
+    @GetMapping(path="", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ApiResponse<CertificateModel> getCertificate(long certificateId) {
+        CertificateModel result = certificateFacadeService.getCertificate(certificateId);
         return new ApiResponse<>(result);
     }
 }

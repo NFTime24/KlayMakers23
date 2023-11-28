@@ -1,13 +1,13 @@
 package com.nftime.klaymakers.service;
 
 import com.nftime.klaymakers.entity.time.CertificateEntity;
-import com.nftime.klaymakers.entity.time.UserEntity;
 import com.nftime.klaymakers.repository.time.CertificateRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by dukedev1004@crossangle.io on 11/26/23
@@ -20,4 +20,6 @@ public class CertificateService {
     public List<CertificateEntity> getCertificateList(){
         return certificateRepository.findAll();
     }
+    public Optional<CertificateEntity> getCertificate(long id) { return certificateRepository.findById(id);}
+    public long getCertificateRegisterCount() { return certificateRepository.count(); }
 }
