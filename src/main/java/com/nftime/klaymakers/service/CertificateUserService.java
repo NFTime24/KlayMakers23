@@ -11,5 +11,8 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class CertificateUserService {
     private final CertificateUserRepository certificateUserRepository;
-    public long getCertificateIssueCount() { return certificateUserRepository.count();}
+
+    public long getCertificateIssueCount() {
+        return certificateUserRepository.count();
+    }
 }

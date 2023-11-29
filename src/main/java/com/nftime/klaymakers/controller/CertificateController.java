@@ -1,8 +1,8 @@
 package com.nftime.klaymakers.controller;
 
 import com.nftime.klaymakers.model.result.ApiResponse;
-import com.nftime.klaymakers.model.result.CertificateModel;
-import com.nftime.klaymakers.service.CertificateFacadeService;
+import com.nftime.klaymakers.model.certificate.result.CertificateModel;
+import com.nftime.klaymakers.service.certificate.CertificateFacadeService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

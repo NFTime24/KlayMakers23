@@ -1,10 +1,11 @@
-package com.nftime.klaymakers.model.result;
+package com.nftime.klaymakers.model.certificate.result;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.nftime.klaymakers.entity.time.CertificateEntity;
 import com.nftime.klaymakers.model.base.BaseObject;
 import lombok.*;
 
+import java.io.Serial;
 import java.time.Instant;
 
 /**
@@ -17,6 +18,8 @@ import java.time.Instant;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
 public class CertificateModel extends BaseObject {
+    @Serial
+    private static final long serialVersionUID = -1418187205649554813L;
     @JsonProperty(required = true)
     private long id;
 

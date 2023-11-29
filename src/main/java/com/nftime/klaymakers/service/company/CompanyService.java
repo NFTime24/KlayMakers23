@@ -1,4 +1,4 @@
-package com.nftime.klaymakers.service;
+package com.nftime.klaymakers.service.company;
 
 import com.nftime.klaymakers.entity.time.CompanyEntity;
 import com.nftime.klaymakers.repository.time.CompanyRepository;
@@ -16,6 +16,12 @@ import java.util.List;
 @Slf4j
 public class CompanyService {
     private final CompanyRepository companyRepository;
-    public List<CompanyEntity> getCompanyList() { return companyRepository.findAll(); }
-    public long getCompanyRegisterCount() { return companyRepository.count();}
+
+    public List<CompanyEntity> getCompanyList() {
+        return companyRepository.findAll();
+    }
+
+    public long getCompanyRegisterCount() {
+        return companyRepository.count();
+    }
 }

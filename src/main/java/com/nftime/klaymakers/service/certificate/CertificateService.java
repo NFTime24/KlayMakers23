@@ -1,4 +1,4 @@
-package com.nftime.klaymakers.service;
+package com.nftime.klaymakers.service.certificate;
 
 import com.nftime.klaymakers.entity.time.CertificateEntity;
 import com.nftime.klaymakers.repository.time.CertificateRepository;
@@ -17,9 +17,20 @@ import java.util.Optional;
 @Slf4j
 public class CertificateService {
     private final CertificateRepository certificateRepository;
-    public List<CertificateEntity> getCertificateList(){
+
+    public List<CertificateEntity> getCertificateList() {
         return certificateRepository.findAll();
     }
-    public Optional<CertificateEntity> getCertificate(long id) { return certificateRepository.findById(id);}
-    public long getCertificateRegisterCount() { return certificateRepository.count(); }
+
+    public Optional<CertificateEntity> getCertificateById(long id) {
+        return certificateRepository.findById(id);
+    }
+
+    public long getCertificateRegisterCount() {
+        return certificateRepository.count();
+    }
+
+//    public addCertificate() {
+//
+//    }
 }
