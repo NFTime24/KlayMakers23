@@ -1,10 +1,11 @@
-package com.nftime.klaymakers.model.result;
+package com.nftime.klaymakers.model.company.result;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.nftime.klaymakers.entity.time.CompanyEntity;
 import com.nftime.klaymakers.model.base.BaseObject;
 import lombok.*;
 
+import java.io.Serial;
 import java.time.Instant;
 
 @Getter
@@ -13,6 +14,10 @@ import java.time.Instant;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
 public class CompanyModel extends BaseObject {
+
+    @Serial
+    private static final long serialVersionUID = -8329492613560955285L;
+
     @JsonProperty(required = true)
     private long id;
 

@@ -12,7 +12,6 @@ import java.io.Serial;
  */
 public class ApiResponse<T> implements ApiResponseCode {
 
-
     @Serial
     private static final long serialVersionUID = 3329139989109380358L;
     @JsonProperty(required = true)

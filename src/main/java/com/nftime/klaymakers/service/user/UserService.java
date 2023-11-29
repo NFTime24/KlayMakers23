@@ -1,4 +1,4 @@
-package com.nftime.klaymakers.service;
+package com.nftime.klaymakers.service.user;
 
 import com.nftime.klaymakers.entity.time.UserEntity;
 import com.nftime.klaymakers.repository.time.UserRepository;

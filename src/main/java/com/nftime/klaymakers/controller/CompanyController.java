@@ -1,8 +1,8 @@
 package com.nftime.klaymakers.controller;
 
 import com.nftime.klaymakers.model.result.ApiResponse;
-import com.nftime.klaymakers.model.result.CompanyModel;
-import com.nftime.klaymakers.service.CompanyFacadeService;
+import com.nftime.klaymakers.model.company.result.CompanyModel;
+import com.nftime.klaymakers.service.company.CompanyFacadeService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

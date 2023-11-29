@@ -1,9 +1,9 @@
-package com.nftime.klaymakers.service;
+package com.nftime.klaymakers.service.company;
 
 import com.nftime.klaymakers.entity.time.CompanyEntity;
 import com.nftime.klaymakers.exception.CustomErrorType;
 import com.nftime.klaymakers.exception.ErrorTypeException;
-import com.nftime.klaymakers.model.result.CompanyModel;
+import com.nftime.klaymakers.model.company.result.CompanyModel;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
