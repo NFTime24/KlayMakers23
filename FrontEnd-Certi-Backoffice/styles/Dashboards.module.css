@@ -1,0 +1,26 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+
+    padding: 36px 32px;
+}
+
+.title
+{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+
+    padding: 4px 8px;
+}
+
+.statusContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+
+    width: 900px;
+}

@@ -1,0 +1,37 @@
+.container
+{
+    background: rgba(28, 28, 28, 0.10);
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1px solid rgba(28, 28, 28, 0.05);
+}
+
+.img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.container[data-shape="company"]
+{
+    width: 32px;
+    height: 32px;
+
+    border-radius: 100px;
+}
+
+.container[data-shape="certificate"]
+{
+    width: 56px;
+    height: 56px;
+
+    border-radius: 12px;
+    border: 1px solid rgba(28, 28, 28, 0.05);
+}
